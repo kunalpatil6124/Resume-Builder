@@ -8,7 +8,7 @@ export default function Header() {
         <div className="bg-primary text-white p-1.5 rounded-md">
           <FileText size={20} />
         </div>
-        <h1 className="font-semibold text-base sm:text-lg text-foreground tracking-tight hidden sm:block">Resume Builder</h1>
+        <h1 className="font-semibold text-base sm:text-lg text-foreground tracking-tight hidden sm:block">Resume Giant</h1>
       </div>
       <div className="flex items-center gap-2 sm:gap-4">
         <button // Reset button added
