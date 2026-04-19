@@ -79,10 +79,9 @@ export default function Education() {
 
       <button 
         onClick={handleAdd}
-        disabled={education.length >= 2}
-        className="w-full py-3 border-2 border-dashed border-gray-300 rounded-lg text-sm font-semibold text-gray-500 hover:text-primary hover:border-primary disabled:opacity-50 disabled:hover:text-gray-500 disabled:hover:border-gray-300 flex justify-center items-center gap-2 transition-colors"
+        className="w-full py-3 border-2 border-dashed border-gray-300 rounded-lg text-sm font-semibold text-gray-500 hover:text-primary hover:border-primary flex justify-center items-center gap-2 transition-colors"
       >
-        <Plus size={16} /> {education.length >= 2 ? 'Max 2 Education Entries Reached' : 'Add Education'}
+        <Plus size={16} /> Add Education
       </button>
     </div>
   );

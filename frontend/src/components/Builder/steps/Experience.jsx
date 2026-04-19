@@ -87,7 +87,6 @@ export default function Experience() {
                 <label className="block text-xs font-medium text-foreground mb-1">Description / Key Responsibilities</label>
                 <textarea 
                   rows={4}
-                  maxLength={500}
                   value={exp.description}
                   onChange={(e) => handleChange(exp.id, 'description', e.target.value)}
                   placeholder="Describe your day-to-day tasks and measurable results."
@@ -102,10 +101,9 @@ export default function Experience() {
 
       <button 
         onClick={handleAdd}
-        disabled={experience.length >= 3}
-        className="w-full py-3 border-2 border-dashed border-gray-300 rounded-lg text-sm font-semibold text-gray-500 hover:text-primary hover:border-primary disabled:opacity-50 disabled:hover:text-gray-500 disabled:hover:border-gray-300 flex justify-center items-center gap-2 transition-colors"
+        className="w-full py-3 border-2 border-dashed border-gray-300 rounded-lg text-sm font-semibold text-gray-500 hover:text-primary hover:border-primary flex justify-center items-center gap-2 transition-colors"
       >
-        <Plus size={16} /> {experience.length >= 3 ? 'Max 3 Experiences Reached' : 'Add Experience'}
+        <Plus size={16} /> Add Experience
       </button>
     </div>
   );

@@ -45,10 +45,9 @@ export default function Achievements() {
 
       <button 
         onClick={handleAdd}
-        disabled={achievements.length >= 4}
-        className="w-full py-3 border-2 border-dashed border-gray-300 rounded-lg text-sm font-semibold text-gray-500 hover:text-primary hover:border-primary disabled:opacity-50 disabled:hover:text-gray-500 disabled:hover:border-gray-300 flex justify-center items-center gap-2 transition-colors"
+        className="w-full py-3 border-2 border-dashed border-gray-300 rounded-lg text-sm font-semibold text-gray-500 hover:text-primary hover:border-primary flex justify-center items-center gap-2 transition-colors"
       >
-        <Plus size={16} /> {achievements.length >= 4 ? 'Max 4 Achievements Reached' : 'Add Achievement'}
+        <Plus size={16} /> Add Achievement
       </button>
     </div>
   );

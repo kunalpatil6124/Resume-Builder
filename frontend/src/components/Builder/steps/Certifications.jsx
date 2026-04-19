@@ -59,10 +59,9 @@ export default function Certifications() {
 
       <button 
         onClick={handleAdd}
-        disabled={certifications.length >= 3}
-        className="w-full py-3 border-2 border-dashed border-gray-300 rounded-lg text-sm font-semibold text-gray-500 hover:text-primary hover:border-primary disabled:opacity-50 disabled:hover:text-gray-500 disabled:hover:border-gray-300 flex justify-center items-center gap-2 transition-colors"
+        className="w-full py-3 border-2 border-dashed border-gray-300 rounded-lg text-sm font-semibold text-gray-500 hover:text-primary hover:border-primary flex justify-center items-center gap-2 transition-colors"
       >
-        <Plus size={16} /> {certifications.length >= 3 ? 'Max 3 Certifications Reached' : 'Add Certification'}
+        <Plus size={16} /> Add Certification
       </button>
     </div>
   );

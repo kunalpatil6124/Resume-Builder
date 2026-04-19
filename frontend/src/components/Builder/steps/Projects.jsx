@@ -77,7 +77,6 @@ export default function Projects() {
                 <label className="block text-xs font-medium text-foreground mb-1">Description</label>
                 <textarea 
                   rows={4}
-                  maxLength={400}
                   value={proj.description}
                   onChange={(e) => handleChange(proj.id, 'description', e.target.value)}
                   placeholder="What did you build? What problems did you solve?"
@@ -92,10 +91,9 @@ export default function Projects() {
 
       <button 
         onClick={handleAdd}
-        disabled={projects.length >= 3}
-        className="w-full py-3 border-2 border-dashed border-gray-300 rounded-lg text-sm font-semibold text-gray-500 hover:text-primary hover:border-primary disabled:opacity-50 disabled:hover:text-gray-500 disabled:hover:border-gray-300 flex justify-center items-center gap-2 transition-colors"
+        className="w-full py-3 border-2 border-dashed border-gray-300 rounded-lg text-sm font-semibold text-gray-500 hover:text-primary hover:border-primary flex justify-center items-center gap-2 transition-colors"
       >
-        <Plus size={16} /> {projects.length >= 3 ? 'Max 3 Projects Reached' : 'Add Project'}
+        <Plus size={16} /> Add Project
       </button>
     </div>
   );

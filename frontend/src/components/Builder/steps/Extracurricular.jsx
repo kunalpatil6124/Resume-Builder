@@ -11,7 +11,6 @@ export default function Extracurricular() {
         <p className="text-xs text-secondary mb-3">Add any sports, leadership roles, NCC, or volunteer work experience.</p>
         <textarea 
           rows={5}
-          maxLength={300}
           value={extracurricular}
           onChange={(e) => updateResumeData('extracurricular', e.target.value)}
           placeholder="e.g. Captain of the University Football Team (2022-2023)"

@@ -45,9 +45,8 @@ export default function Skills() {
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
             onKeyDown={handleKeyDown}
-            disabled={skills.length >= 10}
-            placeholder={skills.length >= 10 ? "Max 10 skills reached" : skills.length === 0 ? "e.g. React, Node.js" : ""}
-            className="flex-1 min-w-[150px] bg-transparent outline-none text-sm py-1 border-none !ring-0 disabled:opacity-50"
+            placeholder={skills.length === 0 ? "e.g. React, Node.js" : ""}
+            className="flex-1 min-w-[150px] bg-transparent outline-none text-sm py-1 border-none !ring-0"
           />
         </div>
       </div>

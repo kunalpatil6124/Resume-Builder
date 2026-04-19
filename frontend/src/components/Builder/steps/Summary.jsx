@@ -34,7 +34,6 @@ export default function Summary() {
         <div className="relative">
           <textarea 
             rows={5}
-            maxLength={400}
             value={summary}
             onChange={(e) => updateResumeData('summary', e.target.value)}
             placeholder="e.g. A passionate web developer with 3+ years of experience in React and Node.js..."
