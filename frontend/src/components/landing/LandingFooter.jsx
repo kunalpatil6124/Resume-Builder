@@ -32,7 +32,7 @@ export default function LandingFooter() {
 
         <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-gray-500 dark:text-gray-400">
-            &copy; {currentYear} ResumeGiant. All rights reserved. Designed by Kunal Patil.
+            &copy; {currentYear} ResumeGiant. All rights reserved. Designed & Built by Kunal Patil.
           </p>
           <div className="flex gap-6 text-sm">
             <a href="#" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors">Privacy</a>
