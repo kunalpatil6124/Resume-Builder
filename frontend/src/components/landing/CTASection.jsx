@@ -11,7 +11,7 @@ export default function CTASection() {
       <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 rounded-full bg-indigo-100 dark:bg-indigo-900/30 blur-3xl opacity-50 z-0"></div>
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
@@ -20,14 +20,14 @@ export default function CTASection() {
         >
           {/* subtle pattern inside CTA */}
           <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '24px 24px' }}></div>
-          
+
           <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-6">
             Ready to upgrade your career?
           </h2>
           <p className="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">
             Stop struggling with Word docs. Build a standout resume that bypasses ATS filters and lands you the interview. No credit card required.
           </p>
-          
+
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
             <Link
               to="/builder"
