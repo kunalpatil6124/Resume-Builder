@@ -22,10 +22,10 @@ export default function Education() {
     <div className="flex flex-col gap-6">
       <div className="space-y-4">
         {education.map((edu, idx) => (
-          <div key={edu.id} className="p-4 border border-border rounded-lg bg-gray-50 relative group transition-all hover:border-gray-300">
+          <div key={edu.id} className="p-4 border border-border rounded-lg bg-gray-50 dark:bg-muted relative group transition-all hover:border-border">
             <button 
               onClick={() => handleRemove(edu.id)}
-              className="absolute top-4 right-4 text-gray-400 hover:text-red-500 opacity-0 group-hover:opacity-100 transition-opacity"
+              className="absolute top-4 right-4 text-gray-400 dark:text-secondary hover:text-red-500 opacity-0 group-hover:opacity-100 transition-opacity"
             >
               <Trash2 size={16} />
             </button>
@@ -39,7 +39,7 @@ export default function Education() {
                   value={edu.degree}
                   onChange={(e) => handleChange(edu.id, 'degree', e.target.value)}
                   placeholder="e.g. B.Tech in Computer Science"
-                  className="w-full rounded-md border border-border bg-white px-3 py-2 text-sm focus:ring-1 focus:ring-primary focus:border-transparent outline-none"
+                  className="w-full rounded-md border border-border bg-transparent px-3 py-2 text-sm focus:ring-1 focus:ring-primary focus:border-transparent outline-none"
                 />
               </div>
               <div className="col-span-2">
@@ -49,7 +49,7 @@ export default function Education() {
                   value={edu.college}
                   onChange={(e) => handleChange(edu.id, 'college', e.target.value)}
                   placeholder="e.g. MIT"
-                  className="w-full rounded-md border border-border bg-white px-3 py-2 text-sm focus:ring-1 focus:ring-primary focus:border-transparent outline-none"
+                  className="w-full rounded-md border border-border bg-transparent px-3 py-2 text-sm focus:ring-1 focus:ring-primary focus:border-transparent outline-none"
                 />
               </div>
               <div>
@@ -59,7 +59,7 @@ export default function Education() {
                   value={edu.year}
                   onChange={(e) => handleChange(edu.id, 'year', e.target.value)}
                   placeholder="e.g. 2020 - 2024"
-                  className="w-full rounded-md border border-border bg-white px-3 py-2 text-sm focus:ring-1 focus:ring-primary focus:border-transparent outline-none"
+                  className="w-full rounded-md border border-border bg-transparent px-3 py-2 text-sm focus:ring-1 focus:ring-primary focus:border-transparent outline-none"
                 />
               </div>
               <div>
@@ -69,7 +69,7 @@ export default function Education() {
                   value={edu.score}
                   onChange={(e) => handleChange(edu.id, 'score', e.target.value)}
                   placeholder="e.g. 9.5 CGPA"
-                  className="w-full rounded-md border border-border bg-white px-3 py-2 text-sm focus:ring-1 focus:ring-primary focus:border-transparent outline-none"
+                  className="w-full rounded-md border border-border bg-transparent px-3 py-2 text-sm focus:ring-1 focus:ring-primary focus:border-transparent outline-none"
                 />
               </div>
             </div>
@@ -79,7 +79,7 @@ export default function Education() {
 
       <button 
         onClick={handleAdd}
-        className="w-full py-3 border-2 border-dashed border-gray-300 rounded-lg text-sm font-semibold text-gray-500 hover:text-primary hover:border-primary flex justify-center items-center gap-2 transition-colors"
+        className="w-full py-3 border-2 border-dashed border-border rounded-lg text-sm font-semibold text-secondary hover:text-primary hover:border-primary flex justify-center items-center gap-2 transition-colors"
       >
         <Plus size={16} /> Add Education
       </button>

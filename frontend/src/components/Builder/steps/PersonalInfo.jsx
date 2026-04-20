@@ -19,7 +19,7 @@ export default function PersonalInfo() {
           value={data.fullName}
           onChange={handleChange}
           placeholder="e.g. John Doe"
-          className="w-full rounded-md border border-border bg-white px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition"
+          className="w-full rounded-md border border-border bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 dark:text-secondary focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition"
         />
       </div>
 
@@ -32,7 +32,7 @@ export default function PersonalInfo() {
             value={data.email}
             onChange={handleChange}
             placeholder="john@example.com"
-            className="w-full rounded-md border border-border bg-white px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition"
+            className="w-full rounded-md border border-border bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 dark:text-secondary focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition"
           />
         </div>
         <div>
@@ -43,7 +43,7 @@ export default function PersonalInfo() {
             value={data.phone}
             onChange={handleChange}
             placeholder="+1 (555) 000-0000"
-            className="w-full rounded-md border border-border bg-white px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition"
+            className="w-full rounded-md border border-border bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 dark:text-secondary focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition"
           />
         </div>
       </div>
@@ -57,20 +57,20 @@ export default function PersonalInfo() {
             value={data.location}
             onChange={handleChange}
             placeholder="New York, NY"
-            className="w-full rounded-md border border-border bg-white px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition"
+            className="w-full rounded-md border border-border bg-transparent px-3 py-2 text-sm placeholder:text-gray-400 dark:text-secondary focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition"
           />
         </div>
         <div>
           <label className="block text-sm font-medium text-foreground mb-1.5">LinkedIn Profile</label>
           <div className="relative">
-            <FaLinkedin className="absolute left-3 top-2.5 text-gray-400" size={16} />
+            <FaLinkedin className="absolute left-3 top-2.5 text-gray-400 dark:text-secondary" size={16} />
             <input 
               type="url" 
               name="linkedin"
               value={data.linkedin}
               onChange={handleChange}
               placeholder="linkedin.com/in/johndoe"
-              className="w-full rounded-md border border-border bg-white pl-10 pr-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition"
+              className="w-full rounded-md border border-border bg-transparent pl-10 pr-3 py-2 text-sm placeholder:text-gray-400 dark:text-secondary focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition"
             />
           </div>
         </div>
@@ -80,14 +80,14 @@ export default function PersonalInfo() {
         <div>
           <label className="block text-sm font-medium text-foreground mb-1.5">GitHub Profile</label>
           <div className="relative">
-            <FaGithub className="absolute left-3 top-2.5 text-gray-400" size={16} />
+            <FaGithub className="absolute left-3 top-2.5 text-gray-400 dark:text-secondary" size={16} />
             <input 
               type="url" 
               name="github"
               value={data.github}
               onChange={handleChange}
               placeholder="github.com/johndoe"
-              className="w-full rounded-md border border-border bg-white pl-10 pr-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition"
+              className="w-full rounded-md border border-border bg-transparent pl-10 pr-3 py-2 text-sm placeholder:text-gray-400 dark:text-secondary focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition"
             />
           </div>
         </div>

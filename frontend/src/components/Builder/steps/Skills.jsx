@@ -28,13 +28,13 @@ export default function Skills() {
         <label className="block text-sm font-medium text-foreground mb-1.5">Core Skills</label>
         <p className="text-xs text-secondary mb-3">Type a skill and press Enter or Comma to add it as a tag.</p>
         
-        <div className="w-full rounded-md border border-border bg-white p-2 min-h-[100px] focus-within:ring-2 focus-within:ring-primary focus-within:border-transparent transition flex flex-wrap gap-2 items-start cursor-text">
+        <div className="w-full rounded-md border border-border bg-transparent p-2 min-h-[100px] focus-within:ring-2 focus-within:ring-primary focus-within:border-transparent transition flex flex-wrap gap-2 items-start cursor-text">
           {skills.map((skill, idx) => (
-            <div key={idx} className="bg-gray-100 border border-gray-200 text-sm px-3 py-1 rounded-full flex items-center gap-1.5 animate-in fade-in zoom-in duration-200">
+            <div key={idx} className="bg-gray-100 dark:bg-gray-800 border border-border text-sm px-3 py-1 rounded-full flex items-center gap-1.5 animate-in fade-in zoom-in duration-200">
               {skill}
               <button 
                 onClick={() => removeSkill(skill)}
-                className="text-gray-400 hover:text-gray-700 bg-white rounded-full p-0.5 pointer-events-auto"
+                className="text-gray-400 dark:text-secondary hover:text-gray-700 dark:text-gray-300 bg-transparent rounded-full p-0.5 pointer-events-auto"
               >
                 <X size={12} />
               </button>

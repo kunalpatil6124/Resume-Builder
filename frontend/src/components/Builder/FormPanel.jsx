@@ -35,9 +35,9 @@ export default function FormPanel() {
   const prevStep = () => setCurrentStep(p => Math.max(0, p - 1));
 
   return (
-    <div className="flex flex-col h-full bg-white relative">
+    <div className="flex flex-col h-full bg-background relative">
       {/* Progress Bar Header */}
-      <div className="bg-white px-5 sm:px-8 pt-6 pb-4 border-b border-border">
+      <div className="bg-background px-5 sm:px-8 pt-6 pb-4 border-b border-border">
         <h2 className="text-xl font-bold tracking-tight text-foreground mb-4">
           {steps[currentStep].title}
         </h2>
@@ -72,7 +72,7 @@ export default function FormPanel() {
       </div>
 
       {/* Navigation Footer */}
-      <div className="bg-white border-t border-border px-5 sm:px-8 py-4 flex justify-between items-center z-10 box-shadow-soft-reverse">
+      <div className="bg-background border-t border-border px-5 sm:px-8 py-4 flex justify-between items-center z-10 box-shadow-soft-reverse">
         <button
           onClick={prevStep}
           disabled={currentStep === 0}
@@ -83,7 +83,7 @@ export default function FormPanel() {
         </button>
         <button
           onClick={currentStep === steps.length - 1 ? () => window.print() : nextStep}
-          className="px-6 py-2 bg-primary hover:bg-gray-800 text-white rounded-md text-sm font-medium flex items-center gap-2 transition-colors shadow-sm"
+          className="px-6 py-2 bg-foreground hover:bg-gray-800 dark:hover:bg-gray-200 text-background rounded-md text-sm font-medium flex items-center gap-2 transition-colors shadow-sm"
         >
           {currentStep === steps.length - 1 ? (
             <>Finish &amp; Download <CheckCircle size={16} /></>

@@ -21,7 +21,7 @@ export default function Builder() {
       </div>
 
       {/* Left panel for the forms - hidden on print and toggled on mobile */}
-      <div className={`w-full lg:w-1/2 flex-col h-full border-r border-border bg-white no-print ${showPreviewOnMobile ? 'hidden' : 'flex'}`}>
+      <div className={`w-full lg:w-1/2 flex-col h-full border-r border-border bg-background no-print ${showPreviewOnMobile ? 'hidden' : 'flex'}`}>
         <FormPanel />
       </div>
       

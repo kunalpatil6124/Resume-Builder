@@ -30,12 +30,12 @@ export default function Achievements() {
                 value={ach}
                 onChange={(e) => handleChange(idx, e.target.value)}
                 placeholder="e.g. Won 1st place in National Hackathon 2023"
-                className="w-full rounded-md border border-border bg-white px-3 py-2 text-sm focus:ring-1 focus:ring-primary focus:border-transparent outline-none"
+                className="w-full rounded-md border border-border bg-transparent px-3 py-2 text-sm focus:ring-1 focus:ring-primary focus:border-transparent outline-none"
               />
             </div>
             <button 
               onClick={() => handleRemove(idx)}
-              className="text-gray-400 hover:text-red-500 p-2 transition-colors"
+              className="text-gray-400 dark:text-secondary hover:text-red-500 p-2 transition-colors"
             >
               <Trash2 size={16} />
             </button>
@@ -45,7 +45,7 @@ export default function Achievements() {
 
       <button 
         onClick={handleAdd}
-        className="w-full py-3 border-2 border-dashed border-gray-300 rounded-lg text-sm font-semibold text-gray-500 hover:text-primary hover:border-primary flex justify-center items-center gap-2 transition-colors"
+        className="w-full py-3 border-2 border-dashed border-border rounded-lg text-sm font-semibold text-secondary hover:text-primary hover:border-primary flex justify-center items-center gap-2 transition-colors"
       >
         <Plus size={16} /> Add Achievement
       </button>

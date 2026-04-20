@@ -43,10 +43,10 @@ export default function Experience() {
     <div className="flex flex-col gap-6">
       <div className="space-y-4">
         {experience.map((exp, idx) => (
-          <div key={exp.id} className="p-4 border border-border rounded-lg bg-gray-50 relative group transition-all hover:border-gray-300">
+          <div key={exp.id} className="p-4 border border-border rounded-lg bg-gray-50 dark:bg-muted relative group transition-all hover:border-border">
             <button 
               onClick={() => handleRemove(exp.id)}
-              className="absolute top-4 right-4 text-gray-400 hover:text-red-500 opacity-0 group-hover:opacity-100 transition-opacity"
+              className="absolute top-4 right-4 text-gray-400 dark:text-secondary hover:text-red-500 opacity-0 group-hover:opacity-100 transition-opacity"
             >
               <Trash2 size={16} />
             </button>
@@ -60,7 +60,7 @@ export default function Experience() {
                   value={exp.role}
                   onChange={(e) => handleChange(exp.id, 'role', e.target.value)}
                   placeholder="e.g. Software Engineer"
-                  className="w-full rounded-md border border-border bg-white px-3 py-2 text-sm focus:ring-1 focus:ring-primary focus:border-transparent outline-none"
+                  className="w-full rounded-md border border-border bg-transparent px-3 py-2 text-sm focus:ring-1 focus:ring-primary focus:border-transparent outline-none"
                 />
               </div>
               <div>
@@ -70,7 +70,7 @@ export default function Experience() {
                   value={exp.org}
                   onChange={(e) => handleChange(exp.id, 'org', e.target.value)}
                   placeholder="e.g. Google"
-                  className="w-full rounded-md border border-border bg-white px-3 py-2 text-sm focus:ring-1 focus:ring-primary focus:border-transparent outline-none"
+                  className="w-full rounded-md border border-border bg-transparent px-3 py-2 text-sm focus:ring-1 focus:ring-primary focus:border-transparent outline-none"
                 />
               </div>
               <div className="col-span-2">
@@ -80,7 +80,7 @@ export default function Experience() {
                   value={exp.duration}
                   onChange={(e) => handleChange(exp.id, 'duration', e.target.value)}
                   placeholder="e.g. June 2021 - Present"
-                  className="w-full rounded-md border border-border bg-white px-3 py-2 text-sm focus:ring-1 focus:ring-primary focus:border-transparent outline-none"
+                  className="w-full rounded-md border border-border bg-transparent px-3 py-2 text-sm focus:ring-1 focus:ring-primary focus:border-transparent outline-none"
                 />
               </div>
               <div className="col-span-2 relative">
@@ -90,7 +90,7 @@ export default function Experience() {
                   value={exp.description}
                   onChange={(e) => handleChange(exp.id, 'description', e.target.value)}
                   placeholder="Describe your day-to-day tasks and measurable results."
-                  className="w-full rounded-md border border-border bg-white px-3 py-2 text-sm focus:ring-1 focus:ring-primary focus:border-transparent outline-none resize-none pb-10"
+                  className="w-full rounded-md border border-border bg-transparent px-3 py-2 text-sm focus:ring-1 focus:ring-primary focus:border-transparent outline-none resize-none pb-10"
                 />
                 <SmartAssistantButton onImprove={() => handleImprove(exp.id, exp.description)} isLoading={loadingIds[exp.id]} />
               </div>
@@ -101,7 +101,7 @@ export default function Experience() {
 
       <button 
         onClick={handleAdd}
-        className="w-full py-3 border-2 border-dashed border-gray-300 rounded-lg text-sm font-semibold text-gray-500 hover:text-primary hover:border-primary flex justify-center items-center gap-2 transition-colors"
+        className="w-full py-3 border-2 border-dashed border-border rounded-lg text-sm font-semibold text-secondary hover:text-primary hover:border-primary flex justify-center items-center gap-2 transition-colors"
       >
         <Plus size={16} /> Add Experience
       </button>

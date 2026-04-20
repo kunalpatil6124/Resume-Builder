@@ -22,10 +22,10 @@ export default function Certifications() {
     <div className="flex flex-col gap-6">
       <div className="space-y-4">
         {certifications.map((cert, idx) => (
-          <div key={cert.id} className="p-4 border border-border rounded-lg bg-gray-50 relative group transition-all hover:border-gray-300">
+          <div key={cert.id} className="p-4 border border-border rounded-lg bg-gray-50 dark:bg-muted relative group transition-all hover:border-border">
             <button 
               onClick={() => handleRemove(cert.id)}
-              className="absolute top-4 right-4 text-gray-400 hover:text-red-500 opacity-0 group-hover:opacity-100 transition-opacity"
+              className="absolute top-4 right-4 text-gray-400 dark:text-secondary hover:text-red-500 opacity-0 group-hover:opacity-100 transition-opacity"
             >
               <Trash2 size={16} />
             </button>
@@ -39,7 +39,7 @@ export default function Certifications() {
                   value={cert.name}
                   onChange={(e) => handleChange(cert.id, 'name', e.target.value)}
                   placeholder="e.g. AWS Certified Solutions Architect"
-                  className="w-full rounded-md border border-border bg-white px-3 py-2 text-sm focus:ring-1 focus:ring-primary focus:border-transparent outline-none"
+                  className="w-full rounded-md border border-border bg-transparent px-3 py-2 text-sm focus:ring-1 focus:ring-primary focus:border-transparent outline-none"
                 />
               </div>
               <div>
@@ -49,7 +49,7 @@ export default function Certifications() {
                   value={cert.issuer}
                   onChange={(e) => handleChange(cert.id, 'issuer', e.target.value)}
                   placeholder="e.g. Amazon Web Services"
-                  className="w-full rounded-md border border-border bg-white px-3 py-2 text-sm focus:ring-1 focus:ring-primary focus:border-transparent outline-none"
+                  className="w-full rounded-md border border-border bg-transparent px-3 py-2 text-sm focus:ring-1 focus:ring-primary focus:border-transparent outline-none"
                 />
               </div>
             </div>
@@ -59,7 +59,7 @@ export default function Certifications() {
 
       <button 
         onClick={handleAdd}
-        className="w-full py-3 border-2 border-dashed border-gray-300 rounded-lg text-sm font-semibold text-gray-500 hover:text-primary hover:border-primary flex justify-center items-center gap-2 transition-colors"
+        className="w-full py-3 border-2 border-dashed border-border rounded-lg text-sm font-semibold text-secondary hover:text-primary hover:border-primary flex justify-center items-center gap-2 transition-colors"
       >
         <Plus size={16} /> Add Certification
       </button>
