@@ -15,24 +15,12 @@ export default function LandingFooter() {
           </div>
 
           <div className="flex items-center space-x-6">
-            <a href="#" className="text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
-              <span className="sr-only">GitHub</span>
-              <FaGithub size={20} />
-            </a>
-            <a href="#" className="text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
-              <span className="sr-only">Twitter</span>
-              <FaTwitter size={20} />
-            </a>
-            <a href="#" className="text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors">
-              <span className="sr-only">LinkedIn</span>
-              <FaLinkedin size={20} />
-            </a>
           </div>
         </div>
 
         <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-800 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-gray-500 dark:text-gray-400">
-            &copy; {currentYear} ResumeGiant. All rights reserved. Designed & Built by Kunal Patil.
+            &copy; {currentYear} ResumeGiant. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm">
             <a href="#" className="text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors">Privacy</a>
